@@ -1,0 +1,40 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+env/
+venv/
+*.egg-info/
+
+# === Airflow ===
+logs/
+airflow.db
+unittests.cfg
+*.log
+*.pid
+*.sqlite
+output/
+# Output folder (si tu sauves les CSV générés)
+dags/output/*.csv
+
+# === Docker ===
+*.sock
+*.pid
+docker-compose.override.yml
+.env
+
+# === VSCode / IDE ===
+.vscode/
+.idea/
+
+# === Mac / OS ===
+.DS_Store
+
+# === Tests / Coverage ===
+.coverage
+htmlcov/
+coverage.xml
+
+# === CI/CD secrets ===
+secrets.env
